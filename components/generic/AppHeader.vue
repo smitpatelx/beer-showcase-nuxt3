@@ -51,5 +51,5 @@
 import GIcon from '@/components/generic/GIcon.vue';
 import { mdiGithub } from '@mdi/js';
 
-const GITHUB_LINK = 'https://github.com/smitpatelx/beer-showcase-vite-vue3';
+const GITHUB_LINK = 'https://github.com/smitpatelx/beer-showcase-nuxt3';
 </script>
