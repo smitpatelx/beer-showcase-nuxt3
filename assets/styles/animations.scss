@@ -1,0 +1,28 @@
+/*
+  Enter and leave animations can use different
+  durations and timing functions.
+*/
+.slide-in-blurred-right {
+  &-enter-active {
+    animation: slide-in-blurred-right 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  }
+
+  &-leave-active {
+    animation: slide-in-blurred-right 0.3s cubic-bezier(0.23, 1, 0.32, 1) reverse;
+  }
+
+  @keyframes slide-in-blurred-right {
+    0% {
+      transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      transform-origin: center;
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scaleY(1) scaleX(1);
+      transform-origin: center;
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+}

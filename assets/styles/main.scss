@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom Animations
+@import './animations.scss';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter-roman-latin.woff2') format('woff2');
+}
+
+body,
+body > * {
+  @apply antialiased #{!important};
+}
+
+body {
+  @apply bg-slate-50;
+}
+
+// Custom select color
+* {
+  ::selection {
+    @apply bg-teal-500 text-teal-50;
+  }
+}
