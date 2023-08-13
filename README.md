@@ -1,63 +1,19 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
+### Hit this brew dog api, display the results:
+#### URL:
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
+https://api.punkapi.com/v2/beers?brewed_after=11-2012
 ```
 
-## Development Server
+#### Framework:
+Vue3, Nuxt3
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+#### Display:
++ Tagline
++ Description
++ Image
++ ABV
++ IBU
++ Warning of some sort if contains lactose
++ Hi-lite of some sort if dry hopped
++ Sort by ascending ABV
++ Remove any with Centennial hops
