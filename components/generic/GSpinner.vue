@@ -36,8 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import { cn } from '@/lib/utils';
-
 type Props = {
   show: boolean;
   color?: 'teal' | 'slate';

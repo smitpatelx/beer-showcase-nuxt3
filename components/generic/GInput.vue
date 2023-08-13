@@ -21,8 +21,6 @@
 
 <script setup lang="ts">
 import { reactive, useAttrs } from 'vue';
-import { cn } from '@/lib/utils';
-import { randomAlpha } from '@/lib/helpers';
 
 const attrs = useAttrs();
 

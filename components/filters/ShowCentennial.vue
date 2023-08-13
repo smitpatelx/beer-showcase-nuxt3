@@ -23,9 +23,9 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { Switch } from '@headlessui/vue';
-import useFilter from '@/store/filters';
+// import useFilter from '@/store/filters';
 
-const { $state } = useFilter();
+const { $state } = useBeerStore();
 
 const enabled = ref<boolean>(false);
 
@@ -33,3 +33,4 @@ watch(enabled, () => {
   $state.showCentennial = enabled.value;
 });
 </script>
+store/use-filters

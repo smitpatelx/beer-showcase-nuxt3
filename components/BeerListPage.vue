@@ -60,18 +60,18 @@
 </template>
 
 <script setup lang="ts">
-import useGetAllBeers from '@/lib/hooks/useGetAllBeers';
-import BeerFactory from '@/components/beer/BeerFactory.vue';
-import useFilter from '@/store/filters';
+// import useGetAllBeers from '@/lib/hooks/useGetAllBeers';
+// import BeerFactory from '@/components/beer/BeerFactory.vue';
+// import useFilter from '@/store/filters';
 import { SortDirection } from '@/interfaces/sort';
-import type { Beer } from '@/interfaces/beers';
-import { computed } from 'vue';
-import { storeToRefs } from 'pinia';
+import { Beer } from '@/interfaces/beers';
+// import { computed } from 'vue';
+// import { storeToRefs } from 'pinia';
 import { mdiCancel } from '@mdi/js';
-import GIcon from '@/components/generic/GIcon.vue';
-import GSpinner from './generic/GSpinner.vue';
+// import GIcon from '@/components/generic/GIcon.vue';
+// import GSpinner from './generic/GSpinner.vue';
 
-const store = useFilter();
+const store = useBeerStore();
 const { sortBy, sortDirection, searchText, showCentennial } = storeToRefs(store);
 
 // Handle APIs
@@ -153,3 +153,4 @@ const computedList = computed(() => {
   return sortedArray;
 });
 </script>
+utils/interfaces/sortutils/interfaces/beersstore/use-filters

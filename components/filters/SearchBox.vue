@@ -30,15 +30,15 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue';
-import GIcon from '@/components/generic/GIcon.vue';
-import ShortcutKeys from '@/components/generic/ShortcutKeys.vue';
+// import { onMounted, ref, watch } from 'vue';
+// import GIcon from '@/components/generic/GIcon.vue';
+// import ShortcutKeys from '@/components/generic/ShortcutKeys.vue';
 import {
   mdiTextSearch
 } from '@mdi/js';
-import useFilters from '@/store/filters';
+// import useFilter from '@/store/filters';
 
-const { $state } = useFilters();
+const { $state } = useBeerStore();
 
 const search = ref('');
 
@@ -109,3 +109,4 @@ onMounted(() => {
   }
 }
 </style>
+store/use-filters

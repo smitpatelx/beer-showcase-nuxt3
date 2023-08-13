@@ -1,8 +1,7 @@
-import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import { SortDirection, SortableLables } from '@/interfaces/sort';
 
-export default defineStore('user-filter', () => {
+export const useBeerStore = defineStore('beer-filter', () => {
   // State
   const searchText = ref('');
   const sortDirection = ref<SortDirection>(SortDirection.Asc);

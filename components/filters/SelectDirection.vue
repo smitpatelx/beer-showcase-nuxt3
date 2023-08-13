@@ -56,20 +56,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+// import { ref, watch } from 'vue';
 import {
   Listbox,
   ListboxButton,
   ListboxOptions,
   ListboxOption,
 } from '@headlessui/vue';
-import GIcon from '@/components/generic/GIcon.vue';
+// import GIcon from '@/components/generic/GIcon.vue';
 import { mdiSortNumericAscending, mdiSortNumericDescending, mdiCheck } from '@mdi/js';
-import { cn } from '@/lib/utils';
-import useFilter from '@/store/filters';
+// import useFilter from '@/store/filters';
 import { SortDirection } from '@/interfaces/sort';
 
-const { $state } = useFilter();
+const { $state } = useBeerStore();
 
 const SortDirectionOptions = [
   { value: SortDirection.Asc, name: 'Asc', unavailable: false },
@@ -81,3 +80,4 @@ watch(selectionOption, () => {
   $state.sortDirection = selectionOption.value;
 });
 </script>
+utils/interfaces/sortstore/use-filters

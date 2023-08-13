@@ -18,10 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import GIcon from '@/components/generic/GIcon.vue';
-import useGetAllBeers from '@/lib/hooks/useGetAllBeers';
 import { mdiRefresh } from '@mdi/js';
-import { reactive } from 'vue';
 
 const renderCount = reactive({ count: 0 });
 const getAllBeersQ = useGetAllBeers();

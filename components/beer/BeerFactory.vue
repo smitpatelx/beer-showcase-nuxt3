@@ -92,11 +92,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Beer } from '@/interfaces/beers';
-import GIcon from '../generic/GIcon.vue';
+import { Beer } from '@/interfaces/beers';
+// import GIcon from '../generic/GIcon.vue';
 import { mdiBeer, mdiAlert } from '@mdi/js';
-import { formatVolume } from '@/lib/helpers';
-import { cn } from '@/lib/utils';
+// import { formatVolume } from '@/lib/helpers';
 
 type Props = {
   beer?: Beer;
@@ -106,3 +105,4 @@ withDefaults(defineProps<Props>(), {
   beer: undefined,
 });
 </script>
+utils/interfaces/beers
