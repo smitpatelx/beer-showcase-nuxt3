@@ -15,7 +15,7 @@
     <input
       ref="searchInputRef"
       type="text"
-      placeholder="Search Accounts"
+      placeholder="Search Beers"
       v-model="search"
       @keyup.stop.prevent.esc="clearSearch"
     />
